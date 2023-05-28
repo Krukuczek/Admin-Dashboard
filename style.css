@@ -15,7 +15,7 @@ html,body{
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr;
-    padding: 20px 40px 20px 40px;
+    padding: 0px 40px 10px 30px;
 }
 .navbar{
     grid-area: 1 / 1 / 3 / 2;
@@ -28,7 +28,8 @@ html,body{
     background-color: #ededed;  
     box-shadow: inset 0px 5px 5px 0px rgba(0,0,0,0.49);
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template: 5% 1fr / 3fr 1fr;
+    padding: 20px;
 }
 .navigators,.others{
     list-style: none;
@@ -58,4 +59,151 @@ ul{
 
 #others{
     padding-top: 50px;
+}
+.searchbar{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    padding-right: 20px;
+}
+#searchBox{
+    border-radius: 2em;
+    border:none;
+    background-color: #ededed;
+    flex:1;
+    height: 2em;
+}
+#searchBox input:active{
+    border: #FF9F46 solid 2px;
+}
+#avatar{
+    border-radius: 50%;
+    width: 4em;
+}
+#currentUserContainer{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+#welcomeDisplay{
+    display: flex;
+    flex-direction: column;
+}
+.nickname{
+    font-size: 1.5em;
+}
+.welcomeText{
+    font-size: 0.8em;
+}
+#mimiUserDisplay{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#miniAvatar{
+    width: 2.5em;
+    border-radius: 50%;
+}
+.actionButtons{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px
+}
+.actionButtons input{
+    background-color: #FF9F46;
+    color: white;
+    width: 30%;
+    height: 3em;
+    border-radius: 2em;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.actionButtons input:hover{
+    background-color: #ededed;
+    color: #FF9F46;
+}
+.content{
+    grid-area: 2 / 1 / 3 / 2;
+    height: 95%;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr ;
+    gap:20px;
+}
+.anotherActivites{
+    grid-area: 1 / 2 / 3 / 3;
+    height: 95%;
+    display: grid;
+    grid-template-rows: 5% 1fr 5% 1fr;
+    padding-left: 15px;
+}
+.content>div{
+    background-color: white;
+    border-left: #4198da solid 8px;
+    border-radius: 0.4em;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.content>div h1{
+    font-size: 1em;
+}
+.content>div p{
+    font-size: 0.8em;
+}
+.annoucements{
+    display: grid;
+    grid-template: repeat(3, 1fr) ;
+    font-size: 0.8em;
+    background-color: white;
+    padding: 20px;
+    border-radius: 1em;
+}
+.annoucements h1{
+    font-size: 1em;
+    margin: 0px;
+}
+.annoucements p{
+    margin: 0px;
+}
+.annoucements>div{
+    border-bottom: #ededed solid 2px;
+}
+.contentActions{
+    display: flex;
+    flex-direction: row-reverse;
+    gap:15px;
+    cursor: pointer;
+}
+.contentTitle{
+    display: flex;
+    align-items: flex-end;
+}
+#trendingContainer > div > img{
+    width: 2.5em;
+    border-radius: 50%;
+}
+#trendingContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    font-size: 0.8em;
+    border-radius: 1em;
+}
+#trendingContainer > div {
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+#trendingContainer > div > div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
