@@ -191,7 +191,7 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     background-color: white;
     padding: 20px;
     font-size: 0.8em;
